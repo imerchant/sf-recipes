@@ -1,6 +1,10 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
+      "hash": "sha256-tMq6SUs1bMH1mjv4YU9Jh0He3miGarLSXHIGxP0GKv0=",
+      "url": "app.css"
+    },
+    {
       "hash": "sha256-7vJEJOmG9KBOcoyYVY+YLr4QbyNfpFpBLWO6lHRYNFg=",
       "url": "data.json"
     },
@@ -13,11 +17,11 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-04bqbA\/0n9LcHQ4JHNzxNuYS8nWa5D9jXl1POzT\/6WU=",
+      "hash": "sha256-v3rivGsyHLvncCHeJ4H5o+ONKypeC+1SuJAjxmvgbPI=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-KcHlWIP32+D7ht6WztGB7ZpK4xqGxQevKYhknHVB5Sc=",
+      "hash": "sha256-b4Ple2rt7gLGIWeuQu6fOWJt93Y+uSYGjBZyP1t76oU=",
       "url": "manifest.json"
     },
     {
@@ -49,7 +53,7 @@
       "url": "_framework\/icudt.dat.br"
     },
     {
-      "hash": "sha256-fIR7gIXpta9+vy2OV\/i0cG0XBEUxw2iuSulvXuMUKwo=",
+      "hash": "sha256-XWi7kpdDvaoKGwWX4sr\/BwKTNP\/uvzvMmeW0GFIQcLA=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -125,11 +129,11 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "hash": "sha256-BWvdVXrrikbjdn\/auYI2keYCd94b06OPRDB96rk1d04=",
+      "hash": "sha256-i8X8O8v1IP9GrIXWrKE94SjXGKaGOTjt0EHxPlmu7tE=",
       "url": "_framework\/MudBlazor.dll.br"
     },
     {
-      "hash": "sha256-\/m2EOPsvglSny4fBNURfNrACsNpjwG5JwwsAFZRcb1c=",
+      "hash": "sha256-Rnj+HAl15VPopPnNUpKrVU3YUZSI0H+Uyo15RExpay4=",
       "url": "_framework\/StarfieldRecipes.dll.br"
     },
     {
@@ -253,5 +257,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "VOYJcMij"
+  "version": "A97Ffwq1"
 };
