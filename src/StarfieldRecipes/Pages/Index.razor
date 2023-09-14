@@ -4,10 +4,34 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
+<MudText Class="mb-8">@Configuration.SampleData</MudText>
 
-<p>Welcome to your new app.</p>
-
-<p>@Configuration.SampleData</p>
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+@foreach (var weapon in Configuration.Weapons.Values)
+{
+    <MudCard>
+        <MudCardContent>
+            <MudText>@weapon.Name</MudText>
+            <MudExpansionPanels>
+                @foreach (var slot in weapon.Components.Select(x => Configuration.Components[x]).GroupBy(x => x.Slot))
+                {
+                    <MudExpansionPanel Text="@slot.Key.ToString()">
+                        <MudList Dense="true" DisablePadding="true" Clickable="false">
+                            @foreach (var mod in slot)
+                            {
+                                <MudListItem Dense="true">
+                                    @mod.Name
+                                    @foreach (var resource in mod.Resources)
+                                    {
+                                        <MudChip Color="Configuration.Resources[resource.Key].Rarity.ToColor()">@resource.Key x@(resource.Value)</MudChip>
+                                    }
+                                </MudListItem>
+                                <MudDivider />
+                            }
+                        </MudList>
+                    </MudExpansionPanel>
+                }
+            </MudExpansionPanels>
+        </MudCardContent>
+    </MudCard>
+}
