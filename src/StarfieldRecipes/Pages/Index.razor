@@ -7,11 +7,19 @@
 <MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
 <MudText Class="mb-8">@Configuration.SampleData</MudText>
 
+<MudStack>
 @foreach (var weapon in Configuration.Weapons.Values)
 {
     <MudCard>
+        <MudCardHeader>
+            <CardHeaderAvatar>
+                <MudChip Label="true" Variant="Variant.Outlined">@weapon.Type</MudChip>
+            </CardHeaderAvatar>
+            <CardHeaderContent>
+                <MudText Typo="Typo.h6">@weapon.Name</MudText>
+            </CardHeaderContent>
+        </MudCardHeader>
         <MudCardContent>
-            <MudText>@weapon.Name</MudText>
             <MudExpansionPanels>
                 @foreach (var slot in weapon.Components.Select(x => Configuration.Components[x]).GroupBy(x => x.Slot))
                 {
@@ -21,12 +29,21 @@
                             {
                                 <MudListItem Dense="true">
                                     @mod.Name
-                                    @foreach (var resource in mod.Resources)
+                                    @foreach (var resourceInfo in mod.Resources)
                                     {
-                                        <MudChip Color="Configuration.Resources[resource.Key].Rarity.ToColor()">@resource.Key x@(resource.Value)</MudChip>
+                                        var resource = Configuration.Resources[resourceInfo.Key];
+                                        var avatar = resource.Symbol ?? string.Empty;
+                                        var style = $"color: {Colors.Orange.Default}; padding-right: .15rem; margin-top: .15rem;";
+                                        <MudChip Label="true" Color="resource.Rarity.ToColor()">
+                                            @if (!string.IsNullOrEmpty(avatar))
+                                            {
+                                                <MudText Typo="Typo.caption" Style="@style">@avatar</MudText>
+                                            }
+                                            @resourceInfo.Key x@(resourceInfo.Value)
+                                        </MudChip>
                                     }
                                 </MudListItem>
-                                <MudDivider />
+                                <MudDivider/>
                             }
                         </MudList>
                     </MudExpansionPanel>
@@ -35,3 +52,11 @@
         </MudCardContent>
     </MudCard>
 }
+
+<MudPaper Elevation="3">
+    @foreach (var rarity in Enum.GetValues<Rarity>())
+    {
+        <MudChip Label="true" Color="rarity.ToColor()">@rarity</MudChip>
+    }
+</MudPaper>
+</MudStack>
