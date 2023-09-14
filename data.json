@@ -1,5 +1,599 @@
 {
-    "Recipes": {
-        "sampleData": "The intermix chamber and containment field are stable."
+  "Recipes": {
+    "sampleData": "The intermix chamber and containment field are stable.",
+
+    "Resources": {
+      "Aldumite": {
+        "Name": "Aldumite",
+        "Weight": 1.9,
+        "Value": 84,
+        "Symbol": "Ad",
+        "Rarity": "Unique",
+        "RefId": "0x00005DEC"
+      },
+      "Alkanes": {
+        "Name": "Alkanes",
+        "Weight": 0.6,
+        "Value": 13,
+        "Symbol": "HnCn",
+        "Rarity": "Uncommon",
+        "RefId": "0x00005570"
+      },
+      "Aluminum": {
+        "Name": "Aluminum",
+        "Weight": 0.5,
+        "Value": 7,
+        "Symbol": "Al",
+        "Rarity": "Common",
+        "RefId": "0x0000557D"
+      },
+      "Antimony": {
+        "Name": "Antimony",
+        "Weight": 0.8,
+        "Value": 30,
+        "Symbol": "Sb",
+        "Rarity": "Exotic",
+        "RefId": "0x0000557B"
+      },
+      "Argon": {
+        "Name": "Argon",
+        "Weight": 0.5,
+        "Value": 5,
+        "Symbol": "Ar",
+        "Rarity": "Common",
+        "RefId": "0x00005588"
+      },
+      "Benzene": {
+        "Name": "Benzene",
+        "Weight": 0.6,
+        "Value": 19,
+        "Symbol": "C6Hn",
+        "Rarity": "Uncommon",
+        "RefId": "0x00005585"
+      },
+      "Beryllium": {
+        "Name": "Beryllium",
+        "Weight": 0.5,
+        "Value": 12,
+        "Symbol": "Be",
+        "Rarity": "Uncommon",
+        "RefId": "0x000057D9"
+      },
+      "Caelumite": {
+        "Name": "Caelumite",
+        "Weight": 0.3,
+        "Value": 264,
+        "Symbol": "Ct",
+        "Rarity": "Exotic",
+        "RefId": "0x000788D6"
+      },
+      "Caesium": {
+        "Name": "Caesium",
+        "Weight": 0.8,
+        "Value": 25,
+        "Symbol": "Cs",
+        "Rarity": "Exotic",
+        "RefId": "0x000057DF"
+      },
+      "Carboxylic Acids": {
+        "Name": "Carboxylic Acids",
+        "Weight": 0.8,
+        "Value": 12,
+        "Symbol": "R-COOH",
+        "Rarity": "Rare",
+        "RefId": "0x00005586"
+      },
+      "Chlorine": {
+        "Name": "Chlorine",
+        "Weight": 0.5,
+        "Value": 6,
+        "Symbol": "Cl",
+        "Rarity": "Common",
+        "RefId": "0x0000557C"
+      },
+      "Chlorosilanes": {
+        "Name": "Chlorosilanes",
+        "Weight": 0.6,
+        "Value": 14,
+        "Symbol": "SiH3Cl",
+        "Rarity": "Uncommon",
+        "RefId": "0x0000557E"
+      },
+      "Cobalt": {
+        "Name": "Cobalt",
+        "Weight": 0.6,
+        "Value": 12,
+        "Symbol": "Co",
+        "Rarity": "Uncommon",
+        "RefId": "0x00005575"
+      },
+      "Copper": {
+        "Name": "Copper",
+        "Weight": 0.6,
+        "Value": 10,
+        "Symbol": "Cu",
+        "Rarity": "Common",
+        "RefId": "0x00005576"
+      },
+      "Dysprosium": {
+        "Name": "Dysprosium",
+        "Weight": 1.4,
+        "Value": 56,
+        "Symbol": "Dy",
+        "Rarity": "Exotic",
+        "RefId": "0x00005569"
+      },
+      "Europium": {
+        "Name": "Europium",
+        "Weight": 1,
+        "Value": 40,
+        "Symbol": "Eu",
+        "Rarity": "Exotic",
+        "RefId": "0x000057E1"
+      },
+      "Fluorine": {
+        "Name": "Fluorine",
+        "Weight": 0.5,
+        "Value": 12,
+        "Symbol": "F",
+        "Rarity": "Uncommon",
+        "RefId": "0x00005577"
+      },
+      "Gold": {
+        "Name": "Gold",
+        "Weight": 0.8,
+        "Value": 24,
+        "Symbol": "Au",
+        "Rarity": "Rare",
+        "RefId": "0x00005579"
+      },
+      "Helium-3": {
+        "Name": "Helium-3",
+        "Weight": 0.5,
+        "Value": 5,
+        "Symbol": "He-3",
+        "Rarity": "Common",
+        "RefId": "0x0000558E"
+      },
+      "Indicite": {
+        "Name": "Indicite",
+        "Weight": 2.3,
+        "Value": 108,
+        "Symbol": "Ie",
+        "Rarity": "Unique",
+        "RefId": "0x0004BA37"
+      },
+      "Ionic Liquids": {
+        "Name": "Ionic Liquids",
+        "Weight": 0.8,
+        "Value": 23,
+        "Symbol": "IL",
+        "Rarity": "Exotic",
+        "RefId": "0x0000557A"
+      },
+      "Iridium": {
+        "Name": "Iridium",
+        "Weight": 0.7,
+        "Value": 14,
+        "Symbol": "Ir",
+        "Rarity": "Uncommon",
+        "RefId": "0x0000558A"
+      },
+      "Iron": {
+        "Name": "Iron",
+        "Weight": 0.6,
+        "Value": 8,
+        "Symbol": "Fe",
+        "Rarity": "Common",
+        "RefId": "0x0000556E"
+      },
+      "Lead": {
+        "Name": "Lead",
+        "Weight": 0.7,
+        "Value": 10,
+        "Symbol": "Pb",
+        "Rarity": "Common",
+        "RefId": "0x00005568"
+      },
+      "Lithium": {
+        "Name": "Lithium",
+        "Weight": 0.5,
+        "Value": 14,
+        "Symbol": "Li",
+        "Rarity": "Rare",
+        "RefId": "0x0000557F"
+      },
+      "Mercury": {
+        "Name": "Mercury",
+        "Weight": 0.8,
+        "Value": 22,
+        "Symbol": "Hg",
+        "Rarity": "Rare",
+        "RefId": "0x0027C4A1"
+      },
+      "Neodymium": {
+        "Name": "Neodymium",
+        "Weight": 0.8,
+        "Value": 20,
+        "Symbol": "Nd",
+        "Rarity": "Rare",
+        "RefId": "0x00005580"
+      },
+      "Neon": {
+        "Name": "Neon",
+        "Weight": 0.5,
+        "Value": 16,
+        "Symbol": "Ne",
+        "Rarity": "Exotic",
+        "RefId": "0x00005587"
+      },
+      "Nickel": {
+        "Name": "Nickel",
+        "Weight": 0.6,
+        "Value": 10,
+        "Symbol": "Ni",
+        "Rarity": "Common",
+        "RefId": "0x00005572"
+      },
+      "Palladium": {
+        "Name": "Palladium",
+        "Weight": 0.7,
+        "Value": 25,
+        "Symbol": "Pd",
+        "Rarity": "Exotic",
+        "RefId": "0x00005574"
+      },
+      "Platinum": {
+        "Name": "Platinum",
+        "Weight": 0.8,
+        "Value": 24,
+        "Symbol": "Pt",
+        "Rarity": "Rare",
+        "RefId": "0x00005573"
+      },
+      "Plutonium": {
+        "Name": "Plutonium",
+        "Weight": 1.6,
+        "Value": 64,
+        "Symbol": "Pu",
+        "Rarity": "Rare",
+        "RefId": "0x0000558C"
+      },
+      "Rothicite": {
+        "Name": "Rothicite",
+        "Weight": 2.2,
+        "Value": 106,
+        "Symbol": "Rc",
+        "Rarity": "Unique",
+        "RefId": "0x000028DF"
+      },
+      "Silver": {
+        "Name": "Silver",
+        "Weight": 0.6,
+        "Value": 20,
+        "Symbol": "Ag",
+        "Rarity": "Uncommon",
+        "RefId": "0x0000556A"
+      },
+      "Tantalum": {
+        "Name": "Tantalum",
+        "Weight": 0.9,
+        "Value": 23,
+        "Symbol": "Ta",
+        "Rarity": "Rare",
+        "RefId": "0x0000556F"
+      },
+      "Tasine": {
+        "Name": "Tasine",
+        "Weight": 1.2,
+        "Value": 52,
+        "Symbol": "Tsn",
+        "Rarity": "Unique",
+        "RefId": "0x00005DED"
+      },
+      "Tetrafluorides": {
+        "Name": "Tetrafluorides",
+        "Weight": 0.7,
+        "Value": 18,
+        "Symbol": "xF4",
+        "Rarity": "Rare",
+        "RefId": "0x00005578"
+      },
+      "Titanium": {
+        "Name": "Titanium",
+        "Weight": 0.5,
+        "Value": 12,
+        "Symbol": "Ti",
+        "Rarity": "Rare",
+        "RefId": "0x0000556D"
+      },
+      "Tungsten": {
+        "Name": "Tungsten",
+        "Weight": 0.7,
+        "Value": 16,
+        "Symbol": "W",
+        "Rarity": "Uncommon",
+        "RefId": "0x0000556B"
+      },
+      "Uranium": {
+        "Name": "Uranium",
+        "Weight": 0.7,
+        "Value": 14,
+        "Symbol": "U",
+        "Rarity": "Uncommon",
+        "RefId": "0x00005589"
+      },
+      "Vanadium": {
+        "Name": "Vanadium",
+        "Weight": 0.7,
+        "Value": 24,
+        "Symbol": "V",
+        "Rarity": "Rare",
+        "RefId": "0x0000558B"
+      },
+      "Veryl": {
+        "Name": "Veryl",
+        "Weight": 0.9,
+        "Value": 40,
+        "Symbol": "Vr",
+        "Rarity": "Unique",
+        "RefId": "0x00005DEE"
+      },
+      "Vytinium": {
+        "Name": "Vytinium",
+        "Weight": 2.5,
+        "Value": 116,
+        "Symbol": "Vy",
+        "Rarity": "Unique",
+        "RefId": "0x00005DEF"
+      },
+      "Water": {
+        "Name": "Water",
+        "Weight": 0.5,
+        "Value": 4,
+        "Symbol": "H2O",
+        "Rarity": "Common",
+        "RefId": "0x00005591"
+      },
+      "Xenon": {
+        "Name": "Xenon",
+        "Weight": 0.8,
+        "Value": 27,
+        "Symbol": "Xe",
+        "Rarity": "Exotic",
+        "RefId": "0x000057DD"
+      },
+      "Ytterbium": {
+        "Name": "Ytterbium",
+        "Weight": 1.2,
+        "Value": 38,
+        "Symbol": "Yb",
+        "Rarity": "Exotic",
+        "RefId": "0x00005571"
+      },
+      "Memory Substrate": {
+        "Name": "Memory Substrate",
+        "RefId": "0x0000559B",
+        "Rarity": "Unique",
+        "Weight": 1.4,
+        "Value": 65
+      },
+      "Gastronomic Delight": {
+        "Name": "Gastronomic Delight",
+        "RefId": "0x0000559D",
+        "Rarity": "Unique",
+        "Weight": 1.5,
+        "Value": 66
+      },
+      "Luxury Textile": {
+        "Name": "Luxury Textile",
+        "RefId": "0x0000559E",
+        "Rarity": "Unique",
+        "Weight": 1.5,
+        "Value": 58
+      },
+      "Polymer": {
+        "Name": "Polymer",
+        "RefId": "0x000055A6",
+        "Rarity": "Exotic",
+        "Weight": 0.5,
+        "Value": 20
+      },
+      "Ornamental Material": {
+        "Name": "Ornamental Material",
+        "RefId": "0x000055A7",
+        "Rarity": "Uncommon",
+        "Weight": 0.5,
+        "Value": 11
+      },
+      "Cosmetic": {
+        "Name": "Cosmetic",
+        "RefId": "0x000055A8",
+        "Rarity": "Uncommon",
+        "Weight": 0.5,
+        "Value": 8
+      },
+      "Analgesic": {
+        "Name": "Analgesic",
+        "RefId": "0x000055A9",
+        "Rarity": "Rare",
+        "Weight": 0.5,
+        "Value": 12
+      },
+      "High-Tensile Spidroin": {
+        "Name": "High-Tensile Spidroin",
+        "RefId": "0x000055AA",
+        "Rarity": "Unique",
+        "Weight": 1.3,
+        "Value": 62
+      },
+      "Antimicrobial": {
+        "Name": "Antimicrobial",
+        "RefId": "0x000055AB",
+        "Rarity": "Uncommon",
+        "Weight": 0.5,
+        "Value": 10
+      },
+      "Spice": {
+        "Name": "Spice",
+        "RefId": "0x000055AC",
+        "Rarity": "Uncommon",
+        "Weight": 0.5,
+        "Value": 11
+      },
+      "Sedative": {
+        "Name": "Sedative",
+        "RefId": "0x000055AD",
+        "Rarity": "Rare",
+        "Weight": 0.5,
+        "Value": 12
+      },
+      "Stimulant": {
+        "Name": "Stimulant",
+        "RefId": "0x000055AE",
+        "Rarity": "Exotic",
+        "Weight": 0.5,
+        "Value": 20
+      },
+      "Fiber": {
+        "Name": "Fiber",
+        "RefId": "0x000055AF",
+        "Rarity": "Common",
+        "Weight": 0.5,
+        "Value": 4
+      },
+      "Membrane": {
+        "Name": "Membrane",
+        "RefId": "0x000055B0",
+        "Rarity": "Uncommon",
+        "Weight": 0.5,
+        "Value": 9
+      },
+      "Adhesive": {
+        "Name": "Adhesive",
+        "RefId": "0x000055B1",
+        "Rarity": "Rare",
+        "Weight": 0.5,
+        "Value": 12
+      },
+      "Biosuppressant": {
+        "Name": "Biosuppressant",
+        "RefId": "0x000055B2",
+        "Rarity": "Exotic",
+        "Weight": 0.5,
+        "Value": 16
+      },
+      "Immunostimulant": {
+        "Name": "Immunostimulant",
+        "RefId": "0x000055B3",
+        "Rarity": "Unique",
+        "Weight": 1.3,
+        "Value": 58
+      },
+      "Aromatic": {
+        "Name": "Aromatic",
+        "RefId": "0x000055B8",
+        "Rarity": "Rare",
+        "Weight": 0.5,
+        "Value": 11
+      },
+      "Structural Material": {
+        "Name": "Structural Material",
+        "RefId": "0x000055B9",
+        "Rarity": "Common",
+        "Weight": 0.5,
+        "Value": 7
+      },
+      "Lubricant": {
+        "Name": "Lubricant",
+        "RefId": "0x000055BA",
+        "Rarity": "Exotic",
+        "Weight": 0.5,
+        "Value": 18
+      },
+      "Toxin": {
+        "Name": "Toxin",
+        "RefId": "0x000055CB",
+        "Rarity": "Common",
+        "Weight": 0.5,
+        "Value": 8
+      },
+      "Sealant": {
+        "Name": "Sealant",
+        "RefId": "0x000055CC",
+        "Rarity": "Common",
+        "Weight": 0.5,
+        "Value": 6
+      },
+      "Amino Acids": {
+        "Name": "Amino Acids",
+        "RefId": "0x000055CD",
+        "Rarity": "Rare",
+        "Weight": 0.5,
+        "Value": 10
+      },
+      "Solvent": {
+        "Name": "Solvent",
+        "RefId": "0x000055CE",
+        "Rarity": "Exotic",
+        "Weight": 0.5,
+        "Value": 19
+      }
+    },
+
+    "Components": {
+      "Bull Barrel": {
+        "Name": "Bull Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Nickel": 1,
+          "Tungsten": 1,
+          "Sealant": 1
+        }
+      },
+      "Fluted Barrel": {
+        "Name": "Fluted Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Nickel": 1,
+          "Titanium": 1,
+          "Sealant": 1
+        }
+      },
+      "Long Barrel": {
+        "Name": "Long Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Nickel": 1,
+          "Sealant": 1,
+          "Iron": 1
+        }
+      },
+      "Stabilizing Barrel": {
+        "Name": "Stabilizing Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Nickel": 1,
+          "Tungsten": 1,
+          "Lubricant": 1
+        }
+      },
+      "Standard Barrel": {
+        "Name": "Standard Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Sealant": 1,
+          "Iron": 1
+        }
+      }
+    },
+
+    "Weapons": {
+      "Hard Target": {
+        "Name": "Hard Target",
+        "Type": "Rifle",
+        "Components": [ "Bull Barrel", "Fluted Barrel", "Long Barrel", "Stabilizing Barrel", "Standard Barrel" ]
+      }
     }
+  }
 }
