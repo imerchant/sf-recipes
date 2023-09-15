@@ -538,6 +538,129 @@
         "Rarity": "Exotic",
         "Weight": 0.5,
         "Value": 19
+      },
+      "Adaptive Frame": {
+        "Name": "Adaptive Frame",
+        "RefId": "0x00246B6A",
+        "Rarity": "Common",
+        "Weight": 1.6,
+        "Value": 24,
+        "ComposedOf": {
+          "Aluminum": 1,
+          "Iron": 1
+        }
+      },
+      "Austenitic Manifold": {
+        "Name": "Austenitic Manifold",
+        "RefId": "0x00246B7C",
+        "Rarity": "Uncommon",
+        "Weight": 4.3,
+        "Value": 79,
+        "ComposedOf": {
+          "Nickel": 2,
+          "Reactive Gauge": 1,
+          "Iron": 2
+        }
+      },
+      "Comm Relay": {
+        "Name": "Comm Relay",
+        "RefId": "0x00246B64",
+        "Rarity": "Uncommon",
+        "Weight": 3.5,
+        "Value": 117,
+        "ComposedOf": {
+          "Isocentered Magnet": 1,
+          "Tau Grade Rheostat": 1
+        }
+      },
+      "Isocentered Magnet": {
+        "Name": "Isocentered Magnet",
+        "RefId": "0x00246B77",
+        "Rarity": "Common",
+        "Weight": 1.8,
+        "Value": 3.6,
+        "ComposedOf": {
+          "Nickel": 1,
+          "Cobalt": 1
+        }
+      },
+      "Isotopic Coolant": {
+        "Name": "Isotopic Coolant",
+        "RefId": "0x00246B76",
+        "Rarity": "Common",
+        "Weight": 0.8,
+        "Value": 25,
+        "ComposedOf": {
+          "Ionic Fluids": 1,
+          "Tetrafluorides": 1
+        }
+      },
+      "Mag Pressure Tank": {
+        "Name": "Mag Pressure Tank",
+        "RefId": "0x00246B70",
+        "Rarity": "Uncommon",
+        "Weight": 1.5,
+        "Value": 25,
+        "ComposedOf": {
+          "Nickel": 1,
+          "Aluminum": 2
+        }
+      },
+      "Monopropellant": {
+        "Name": "Monopropellant",
+        "RefId": "0x00246B74",
+        "Rarity": "Uncommon",
+        "Weight": 3.5,
+        "Value": 76,
+        "ComposedOf": {
+          "Alkanes": 2,
+          "Reactive Gauge": 2,
+          "Mag Pressure Tank": 1
+        }
+      },
+      "Polytextile": {
+        "Name": "Polytextile",
+        "RefId": "0x00246B72",
+        "Rarity": "Uncommon",
+        "Weight": 2,
+        "Value": 25,
+        "ComposedOf": {
+          "Fiber": 2,
+          "Cosmetic": 1
+        }
+      },
+      "Reactive Gauge": {
+        "Name": "Reactive Gauge",
+        "RefId": "0x00246B6F",
+        "Rarity": "Common",
+        "Weight": 1.5,
+        "Value": 25,
+        "ComposedOf": {
+          "Aluminum": 2,
+          "Copper": 1
+        }
+      },
+      "Tau Grade Rheostat": {
+        "Name": "Tau Grade Rheostat",
+        "RefId": "0x00246B68",
+        "Rarity": "Uncommon",
+        "Weight": 2.6,
+        "Value": 82,
+        "ComposedOf": {
+          "Copper": 1,
+          "Beryllium": 1
+        }
+      },
+      "Zero Wire": {
+        "Name": "Zero Wire",
+        "RefId": "0x00246B65",
+        "Rarity": "Common",
+        "Weight": 1.7,
+        "Value": 52,
+        "ComposedOf": {
+          "Silver": 1,
+          "Copper": 1
+        }
       }
     },
 
@@ -546,10 +669,11 @@
         "Name": "Bull Barrel",
         "Slot": "Barrel",
         "Resources": {
-          "Nickel": 1,
-          "Tungsten": 1,
+          "Nickel": 2,
+          "Tungsten": 2,
           "Sealant": 1
-        }
+        },
+        "Research": "Barrel Mods 2"
       },
       "Fluted Barrel": {
         "Name": "Fluted Barrel",
@@ -567,16 +691,18 @@
           "Nickel": 1,
           "Sealant": 1,
           "Iron": 1
-        }
+        },
+        "Research": "Barrel Mods 1"
       },
       "Stabilizing Barrel": {
         "Name": "Stabilizing Barrel",
         "Slot": "Barrel",
         "Resources": {
-          "Nickel": 1,
-          "Tungsten": 1,
+          "Nickel": 2,
+          "Tungsten": 2,
           "Lubricant": 1
-        }
+        },
+        "Research": "Barrel Mods 2"
       },
       "Standard Barrel": {
         "Name": "Standard Barrel",
@@ -584,6 +710,155 @@
         "Resources": {
           "Sealant": 1,
           "Iron": 1
+        }
+      },
+      "Short Barrel": {
+        "Name": "Short Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Nickel": 1,
+          "Iron": 1
+        }
+      },
+      "Tech Barrel": {
+        "Name": "Tech Barrel",
+        "Slot": "Barrel",
+        "Resources": {
+          "Nickel": 2,
+          "Iron": 2,
+          "Sealant": 1
+        },
+        "Research": "Barrel Mods 2"
+      },
+      "Suppressor Barrel": {
+        "Name": "Suppressor",
+        "Slot": "Barrel",
+        "Resources": {
+          "Titanium": 3,
+          "Tungsten": 2,
+          "Polymer": 2
+        },
+        "Research": "Barrel Mods 2"
+      },
+
+      "Glow Sights": {
+        "Name": "Glow Sights",
+        "Slot": "Optic",
+        "Resources": {
+          "Uranium": 1,
+          "Aluminum": 1
+        }
+      },
+      "Reflex Sight": {
+        "Name": "Reflex Sight",
+        "Slot": "Optic",
+        "Resources": {
+          "Chlorosilanes": 1,
+          "Adhesive": 1,
+          "Aluminum": 1
+        }
+      },
+
+      "Compensator": {
+        "Name": "Compensator",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Nickel": 1,
+          "Aluminum": 1
+        }
+      },
+      "Large Muzzle Brake": {
+        "Name": "Large Muzzle Brake",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Titanium": 2,
+          "Tungsten": 2,
+          "Ploymer": 2,
+          "Sealant": 2
+        },
+        "Research": "Muzzle Mods 2"
+      },
+      "Muzzle Brake": {
+        "Name": "Muzzle Break",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Titanium": 2,
+          "Tungsten": 3,
+          "Sealant": 2
+        },
+        "Research": "Muzzle Mods 1"
+      },
+      "Standard Muzzle": {
+        "Name": "Standard Muzzle",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Nickel": 2,
+          "Iron": 2
+        }
+      },
+      "No Mod Muzzle": {
+        "Name": "No Mod",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Nickel": 1,
+          "Iron": 1
+        }
+      },
+      "Suppressor Muzzle": {
+        "Name": "Suppressor",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Tungsten": 2,
+          "Tantalum": 3,
+          "Polymer": 2
+        },
+        "Research": "Muzzle Mods 2"
+      },
+
+      "Laser Sight": {
+        "Name": "Laser Sight",
+        "Slot": "Laser",
+        "Resources": {
+          "Neon": 1,
+          "Aluminum": 1,
+          "Helium-3": 1
+        }
+      },
+      "None": {
+        "Name": "None",
+        "Slot": "Laser",
+        "Resources": {
+          "Aluminum": 1,
+          "Sealant": 1
+        }
+      },
+      "Recon Laser Sight": {
+        "Name": "Recon Laser Sight",
+        "Slot": "Laser",
+        "Resources": {
+          "Zero Wire": 2,
+          "Adhesive": 2,
+          "Palladium": 2,
+          "Vanadium": 3
+        },
+        "Research": "Optic and Laser Mods 3"
+      },
+
+      "Iron Sights": {
+        "Name": "Iron Sights",
+        "Slot": "Optic",
+        "Resources": {
+          "Nickel": 1,
+          "Aluminum": 1
+        }
+      },
+      "Reflex Sights": {
+        "Name": "Reflex Sights",
+        "Slot": "Optic",
+        "Resources": {
+          "Chlorosilanes": 1,
+          "Adhesive": 1,
+          "Aluminum": 1
         }
       }
     },
@@ -593,6 +868,16 @@
         "Name": "Hard Target",
         "Type": "Rifle",
         "Components": [ "Bull Barrel", "Fluted Barrel", "Long Barrel", "Stabilizing Barrel", "Standard Barrel" ]
+      },
+      "Grendel": {
+        "Name": "Grendel",
+        "Type": "Rifle",
+        "Components": [ "Long Barrel", "Short Barrel", "Stabilizing Barrel", "Standard Barrel", "Tech Barrel", "Laser Sight", "None", "Recon Laser Sight" ]
+      },
+      "Eon": {
+        "Name": "Eon",
+        "Type": "Pistol",
+        "Components": [ "Glow Sights", "Reflex Sight", "Compensator", "Muzzle Brake", "No Mod Muzzle", "Suppressor Muzzle" ]
       }
     }
   }

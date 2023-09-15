@@ -2,9 +2,9 @@
 @page "/"
 @inject RecipesConfiguration Configuration
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Starfield Recipes</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
+<MudText Typo="Typo.h3" GutterBottom="true">Starfield Recipes</MudText>
 <MudText Class="mb-8">@Configuration.SampleData</MudText>
 
 <MudStack>
@@ -28,20 +28,26 @@
                             @foreach (var mod in slot)
                             {
                                 <MudListItem Dense="true">
-                                    @mod.Name
-                                    @foreach (var resourceInfo in mod.Resources)
-                                    {
-                                        var resource = Configuration.Resources[resourceInfo.Key];
-                                        var avatar = resource.Symbol ?? string.Empty;
-                                        var style = $"color: {Colors.Orange.Default}; padding-right: .15rem; margin-top: .15rem;";
-                                        <MudChip Label="true" Color="resource.Rarity.ToColor()">
-                                            @if (!string.IsNullOrEmpty(avatar))
+                                    <MudGrid>
+                                        <MudItem xs="2">
+                                            @mod.Name
+                                        </MudItem>
+                                        <MudItem xs="4">
+                                            @foreach (var resourceInfo in mod.Resources)
                                             {
-                                                <MudText Typo="Typo.caption" Style="@style">@avatar</MudText>
+                                                var resource = Configuration.Resources[resourceInfo.Key];
+                                                var symbol = resource.Symbol ?? string.Empty;
+                                                var style = $"color: {Colors.Orange.Default}; padding-right: .15rem; margin-top: .15rem;";
+                                                <MudChip Label="true" Color="resource.Rarity.ToColor()">
+                                                    @if (!string.IsNullOrEmpty(symbol))
+                                                    {
+                                                        <MudText Typo="Typo.caption" Style="@style">@symbol</MudText>
+                                                    }
+                                                    @resourceInfo.Key x@(resourceInfo.Value)
+                                                </MudChip>
                                             }
-                                            @resourceInfo.Key x@(resourceInfo.Value)
-                                        </MudChip>
-                                    }
+                                        </MudItem>
+                                    </MudGrid>
                                 </MudListItem>
                                 <MudDivider/>
                             }
