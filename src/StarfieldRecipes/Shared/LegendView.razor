@@ -1,0 +1,8 @@
+﻿<MudGrid Justify="Justify.Center">
+<MudPaper Elevation="3">
+    @foreach (var rarity in Enum.GetValues<Rarity>())
+    {
+        <MudChip Label="true" Color="rarity.ToColor()">@rarity</MudChip>
+    }
+</MudPaper>
+</MudGrid>

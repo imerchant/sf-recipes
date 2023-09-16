@@ -5,15 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3A3770B6-6F14-49EB-8792-82DE451BCA5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarfieldRecipes", "src\StarfieldRecipes\StarfieldRecipes.csproj", "{813F5284-8B31-4485-A728-7D0927FC85EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarfieldRecipes", "src\StarfieldRecipes\StarfieldRecipes.csproj", "{813F5284-8B31-4485-A728-7D0927FC85EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{813F5284-8B31-4485-A728-7D0927FC85EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -21,7 +18,13 @@ Global
 		{813F5284-8B31-4485-A728-7D0927FC85EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{813F5284-8B31-4485-A728-7D0927FC85EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{813F5284-8B31-4485-A728-7D0927FC85EE} = {3A3770B6-6F14-49EB-8792-82DE451BCA5B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62898F86-5721-4A42-98B2-7E8638BF1711}
 	EndGlobalSection
 EndGlobal

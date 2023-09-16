@@ -23,5 +23,6 @@ builder.Configuration.AddJsonStream(stream);
 var recipesConfiguration = new RecipesConfiguration();
 builder.Configuration.Bind("Recipes", recipesConfiguration);
 builder.Services.AddSingleton(recipesConfiguration);
+builder.Services.AddSingleton<Checklist>();
 
 await builder.Build().RunAsync();

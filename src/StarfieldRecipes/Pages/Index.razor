@@ -1,5 +1,4 @@
-﻿@using StarfieldRecipes.Configuration
-@page "/"
+﻿@page "/"
 @inject RecipesConfiguration Configuration
 
 <PageTitle>Starfield Recipes</PageTitle>
@@ -8,61 +7,17 @@
 <MudText Class="mb-8">@Configuration.SampleData</MudText>
 
 <MudStack>
+<MudGrid>
+<MudItem xs="8">
 @foreach (var weapon in Configuration.Weapons.Values)
 {
-    <MudCard>
-        <MudCardHeader>
-            <CardHeaderAvatar>
-                <MudChip Label="true" Variant="Variant.Outlined">@weapon.Type</MudChip>
-            </CardHeaderAvatar>
-            <CardHeaderContent>
-                <MudText Typo="Typo.h6">@weapon.Name</MudText>
-            </CardHeaderContent>
-        </MudCardHeader>
-        <MudCardContent>
-            <MudExpansionPanels>
-                @foreach (var slot in weapon.Components.Select(x => Configuration.Components[x]).GroupBy(x => x.Slot))
-                {
-                    <MudExpansionPanel Text="@slot.Key.ToString()">
-                        <MudList Dense="true" DisablePadding="true" Clickable="false">
-                            @foreach (var mod in slot)
-                            {
-                                <MudListItem Dense="true">
-                                    <MudGrid>
-                                        <MudItem xs="2">
-                                            @mod.Name
-                                        </MudItem>
-                                        <MudItem xs="4">
-                                            @foreach (var resourceInfo in mod.Resources)
-                                            {
-                                                var resource = Configuration.Resources[resourceInfo.Key];
-                                                var symbol = resource.Symbol ?? string.Empty;
-                                                var style = $"color: {Colors.Orange.Default}; padding-right: .15rem; margin-top: .15rem;";
-                                                <MudChip Label="true" Color="resource.Rarity.ToColor()">
-                                                    @if (!string.IsNullOrEmpty(symbol))
-                                                    {
-                                                        <MudText Typo="Typo.caption" Style="@style">@symbol</MudText>
-                                                    }
-                                                    @resourceInfo.Key x@(resourceInfo.Value)
-                                                </MudChip>
-                                            }
-                                        </MudItem>
-                                    </MudGrid>
-                                </MudListItem>
-                                <MudDivider/>
-                            }
-                        </MudList>
-                    </MudExpansionPanel>
-                }
-            </MudExpansionPanels>
-        </MudCardContent>
-    </MudCard>
+    <WeaponView Weapon="weapon" />
 }
+</MudItem>
+<MudItem xs="4">
+    <ChecklistView />
+</MudItem>
+</MudGrid>
 
-<MudPaper Elevation="3">
-    @foreach (var rarity in Enum.GetValues<Rarity>())
-    {
-        <MudChip Label="true" Color="rarity.ToColor()">@rarity</MudChip>
-    }
-</MudPaper>
+<LegendView />
 </MudStack>

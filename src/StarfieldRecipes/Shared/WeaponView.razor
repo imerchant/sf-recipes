@@ -1,0 +1,36 @@
+﻿@inject RecipesConfiguration Configuration
+
+<MudCard Square="true" Elevation="2" Outlined="true" Style="margin-bottom: 1rem;">
+    <MudCardHeader>
+        <CardHeaderAvatar>
+            <MudChip Label="true" Variant="Variant.Outlined">@Weapon.Type</MudChip>
+        </CardHeaderAvatar>
+        <CardHeaderContent>
+            <MudText Typo="Typo.h6">@Weapon.Name</MudText>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudExpansionPanels>
+            @foreach (var slot in Weapon.Components.Select(x => Configuration.Components[x]).GroupBy(x => x.Slot))
+            {
+                <MudExpansionPanel Text="@slot.Key.ToString()">
+                    <MudList Dense="true" DisablePadding="true" Clickable="false">
+                        @foreach (var mod in slot)
+                        {
+                            <MudListItem Dense="true">
+                                <ComponentView Mod="mod" />
+                            </MudListItem>
+                            <MudDivider DividerType="DividerType.Inset" />
+                        }
+                    </MudList>
+                </MudExpansionPanel>
+            }
+        </MudExpansionPanels>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter]
+    [EditorRequired]
+    public Weapon Weapon { get; set; }
+}

@@ -1,0 +1,49 @@
+﻿@inject RecipesConfiguration Configuration
+@inject Checklist Checklist
+
+<MudGrid>
+    <MudItem xs="1">
+        <MudToggleIconButton
+            @bind-Toggled="@Added"
+            Variant="Variant.Filled"
+            Icon="@Icons.Material.Filled.Add"
+            Size="Size.Small"
+            Title="Add to Checklist"
+            Color="Color.Secondary"
+            ToggledIcon="@Icons.Material.Filled.Close"
+            ToggledColor="Color.Success"
+            ToggledSize="Size.Small"
+            ToggledTitle="Remove from Checklist" />
+    </MudItem>
+    <MudItem xs="3">
+        <MudText>@Mod.Name</MudText>
+        @if (!string.IsNullOrEmpty(Mod.Research))
+        {
+            <MudText Typo="Typo.caption" Style="font-style: italic;">@Mod.Research</MudText>
+        }
+    </MudItem>
+    <MudItem xs="8">
+        @foreach (var (resourceName, count) in Mod.Resources)
+        {
+            <ResourceChip Resource="Configuration.Resources[resourceName]" Count="count" />
+        }
+    </MudItem>
+</MudGrid>
+
+@code {
+    private bool _added;
+
+    [Parameter]
+    [EditorRequired]
+    public Component Mod { get; set; }
+
+    public bool Added
+    {
+        get => _added;
+        set
+        {
+            _added = value;
+            Checklist.UpdateResources(_added ? ChecklistAction.Add : ChecklistAction.Remove, Mod.Resources);
+        }
+    }
+}

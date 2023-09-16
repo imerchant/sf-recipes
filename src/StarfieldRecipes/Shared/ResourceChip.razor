@@ -1,0 +1,17 @@
+﻿<MudChip Label="true" Color="Resource.Rarity.ToColor()">
+    @if (!string.IsNullOrEmpty(Resource.Symbol))
+    {
+        <MudText Inline="true" Typo="Typo.caption" Style="color: #FF9800; padding-right: .15rem; margin-top: .15rem;">@Resource.Symbol</MudText>
+    }
+    <MudText Inline="true" Typo="Typo.body1">@Resource.Name x@(Count)</MudText>
+</MudChip>
+
+@code {
+    [Parameter]
+    [EditorRequired]
+    public Resource Resource { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public int Count { get; set; } = 1;
+}
