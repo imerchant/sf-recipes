@@ -9,9 +9,29 @@
 <MudStack>
 <MudGrid>
 <MudItem xs="12" sm="12" md="8">
-@foreach (var weapon in Configuration.Weapons.Values)
+<MudTextField
+    T="string"
+    @bind-Value="@_weaponFilterText"
+    Variant="Variant.Outlined"
+    AdornmentIcon="@Icons.Material.Filled.Search"
+    AdornmentColor="Color.Warning"
+    Adornment="Adornment.Start"
+    Placeholder="Weapon name..."
+    AutoFocus="true"
+    MaxLength="25"
+    FullWidth="true"
+    IconSize="Size.Large"
+    DebounceInterval="150"
+    Label="Search weapons"
+    Style="margin-bottom: 1.5rem;"
+    InputType="InputType.Text"
+    InputMode="InputMode.text"
+    />
+@foreach (var (_, weapon) in Configuration.Weapons)
 {
-    <WeaponView Weapon="weapon" />
+    <WeaponView
+        hidden="@(string.IsNullOrEmpty(_weaponFilterText) || !weapon.Name.Contains(_weaponFilterText, StringComparison.OrdinalIgnoreCase))"
+        Weapon="weapon" />
 }
 </MudItem>
 <MudItem xs="12" sm="12" md="4">
@@ -21,3 +41,7 @@
 
 <LegendView />
 </MudStack>
+
+@code {
+    private string _weaponFilterText = "";
+}

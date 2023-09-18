@@ -1,6 +1,6 @@
 ﻿@inject RecipesConfiguration Configuration
 
-<MudCard Square="true" Elevation="2" Outlined="true" Style="margin-bottom: 1rem;">
+<MudCard Square="true" Elevation="2" Outlined="true" Style="margin-bottom: 1rem;" @attributes="InputAttributes">
     <MudCardHeader>
         <CardHeaderAvatar>
             <MudChip Label="true" Variant="Variant.Outlined">@Weapon.Type</MudChip>
@@ -33,4 +33,7 @@
     [Parameter]
     [EditorRequired]
     public Weapon Weapon { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttributes { get; set; }
 }
