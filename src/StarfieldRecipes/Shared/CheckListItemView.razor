@@ -1,0 +1,36 @@
+﻿@inject RecipesConfiguration Configuration
+
+<ResourceChip Resource="Resource" Count="Count"/>
+@if (Resource.IsManufactured)
+{
+    <MudToggleIconButton
+        @bind-Toggled="@_isExpanded"
+        Icon="@Icons.Material.Filled.ArrowDropDown"
+        Title="Resource is crafted (expand to see)"
+        ToggledIcon="@Icons.Material.Filled.ArrowDropUp"
+        ToggledTitle="Resource is crafted"/>
+    <div hidden="@(!_isExpanded)" style="margin-left: 2rem;">
+        @if (Resource.ComposedOf is not null)
+        {
+            @foreach (var (composedOfName, composedOfCount) in Resource.ComposedOf)
+            {
+                <ResourceChip
+                    Resource="Configuration.Resources[composedOfName]"
+                    Count="composedOfCount"/>
+            }
+        }
+    </div>
+}
+
+@code {
+    private bool _isExpanded;
+
+    [Parameter]
+    [EditorRequired]
+    public Resource Resource { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public int Count { get; set; }
+
+}

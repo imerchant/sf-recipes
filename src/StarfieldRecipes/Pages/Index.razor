@@ -8,13 +8,13 @@
 
 <MudStack>
 <MudGrid>
-<MudItem xs="8">
+<MudItem xs="12" sm="12" md="8">
 @foreach (var weapon in Configuration.Weapons.Values)
 {
     <WeaponView Weapon="weapon" />
 }
 </MudItem>
-<MudItem xs="4">
+<MudItem xs="12" sm="12" md="4">
     <ChecklistView />
 </MudItem>
 </MudGrid>
