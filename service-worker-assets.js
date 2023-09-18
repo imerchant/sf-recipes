@@ -53,7 +53,7 @@
       "url": "_framework\/icudt.dat.br"
     },
     {
-      "hash": "sha256-bXtjwtD8YN7GMjymrODmq1IzY+dhSOGcC+W+DzlcCgA=",
+      "hash": "sha256-CCFNHupfE4pP+z3WE+j6sYhwX+q7pqnBvHor7QBvhgc=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -125,11 +125,11 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "hash": "sha256-baqz25xtMwUwt\/nkZHf33\/DzJzmVWpUFkGDZ+3bzJN0=",
+      "hash": "sha256-fWtke07T6DWcMrbLk0sDcY++Jy2q4tkxPttMz50F2Us=",
       "url": "_framework\/MudBlazor.dll.br"
     },
     {
-      "hash": "sha256-HlU9Rcu12Eez\/tceJCGbo4IsTnWdVbM0s0VC4FTsUC4=",
+      "hash": "sha256-daT49WjASvmmZZNT73W81B5p3ebzbyGJrVYHdetlkMY=",
       "url": "_framework\/StarfieldRecipes.dll.br"
     },
     {
@@ -241,5 +241,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "XkckzSyj"
+  "version": "z9U1klTl"
 };
