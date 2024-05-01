@@ -1,3 +1,5 @@
+using System.ComponentModel;
+
 namespace StarfieldRecipes.Configuration;
 
 public enum Slot
@@ -6,7 +8,9 @@ public enum Slot
     Laser,
     Optic,
     Muzzle,
+    [Description("Grip and Stock")]
     GripAndStock,
+    [Description("Magazine and Battery")]
     MagazineAndBattery,
     Internal,
     Receiver

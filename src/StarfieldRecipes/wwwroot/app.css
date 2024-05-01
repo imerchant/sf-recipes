@@ -28,3 +28,7 @@
     transform: rotate(360deg);
   }
 }
+
+.mud-collapse-entering {
+    animation-duration: .2s !important
+}
