@@ -661,6 +661,25 @@
           "Silver": 1,
           "Copper": 1
         }
+      },
+      "Supercooled Magnet": {
+        "Name": "Supercooled Magnet",
+        "Rarity": "Rare",
+        "ComposedOf": {
+          "Neodymium": 3,
+          "Isocentered Magnet": 1,
+          "Isotopic Coolant": 1
+        }
+      },
+      "Microsecond Regulator": {
+        "Name": "Microsecond Regulator",
+        "Rarity": "Exotic",
+        "ComposedOf": {
+          "Lithium": 2,
+          "Europium": 4,
+          "Supercooled Magnet": 1,
+          "Tau Grade Rheostat": 1
+        }
       }
     },
 
@@ -688,9 +707,9 @@
         "Name": "Long Barrel",
         "Slot": "Barrel",
         "Resources": {
+          "Iron": 1,
           "Nickel": 1,
-          "Sealant": 1,
-          "Iron": 1
+          "Sealant": 1
         },
         "Research": "Barrel Mods 1"
       },
@@ -708,8 +727,8 @@
         "Name": "Standard Barrel",
         "Slot": "Barrel",
         "Resources": {
-          "Sealant": 1,
-          "Iron": 1
+          "Iron": 1,
+          "Sealant": 1
         }
       },
       "Short Barrel": {
@@ -740,6 +759,15 @@
         },
         "Research": "Barrel Mods 2"
       },
+      "Magnetic Rails": {
+        "Name": "Magnetic Rails",
+        "Slot": "Barrel",
+        "Resources": {
+          "Supercooled Magnet": 1,
+          "Lubricant": 1,
+          "Cobalt": 1
+        }
+      },
 
       "Glow Sights": {
         "Name": "Glow Sights",
@@ -757,6 +785,33 @@
           "Adhesive": 1,
           "Aluminum": 1
         }
+      },
+      "Iron Sights": {
+        "Name": "Iron Sights",
+        "Slot": "Optic",
+        "Resources": {
+          "Nickel": 1,
+          "Aluminum": 1
+        }
+      },
+      "Reflex Sights": {
+        "Name": "Reflex Sights",
+        "Slot": "Optic",
+        "Resources": {
+          "Chlorosilanes": 1,
+          "Adhesive": 1,
+          "Aluminum": 1
+        }
+      },
+      "Short Scope": {
+        "Name": "Short Scope",
+        "Slot": "Optic",
+        "Resources": {
+          "Chlorosilanes": 2,
+          "Adhesive": 1,
+          "Titanium": 2
+        },
+        "Research": "Optic and Laser Mods 1"
       },
 
       "Compensator": {
@@ -814,6 +869,37 @@
         },
         "Research": "Muzzle Mods 2"
       },
+      "Shock Charge Band": {
+        "Name": "Shock Charge Band",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Titanium": 4,
+          "Polymer": 1,
+          "Adhesive": 2,
+          "Ytterbium": 2
+        },
+        "Research": "Muzzle Mods 3"
+      },
+      "Focal Lens": {
+        "Name": "Focal Lens",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Tungsten": 1,
+          "Argon": 1,
+          "Sealant": 1
+        }
+      },
+      "Focus Nozzle": {
+        "Name": "Focus Nozzle",
+        "Slot": "Muzzle",
+        "Resources": {
+          "Zero Wire": 1,
+          "Titanium": 2,
+          "Tantalum": 3,
+          "Polymer": 2
+        },
+        "Research": "Muzzle Mods 3"
+      },
 
       "Laser Sight": {
         "Name": "Laser Sight",
@@ -824,8 +910,8 @@
           "Helium-3": 1
         }
       },
-      "None": {
-        "Name": "None",
+      "No Mod Laser": {
+        "Name": "No Mod / None",
         "Slot": "Laser",
         "Resources": {
           "Aluminum": 1,
@@ -844,22 +930,117 @@
         "Research": "Optic and Laser Mods 3"
       },
 
-      "Iron Sights": {
-        "Name": "Iron Sights",
-        "Slot": "Optic",
+      "Armor-Piercing Rounds": {
+        "Name": "Armor-Piercing Rounds",
+        "Slot": "MagazineAndBattery",
         "Resources": {
-          "Nickel": 1,
+          "Tungsten": 2,
+          "Adhesive": 1,
+          "Lead": 1
+        },
+        "Research": "Magazine and Battery Mods 2"
+      },
+      "Depleted Uranium Rounds": {
+        "Name": "Depleted Uranium Rounds",
+        "Slot": "MagazineAndBattery",
+        "Resources": {
+          "Sealant": 2,
+          "Uranium": 3,
+          "Lead": 3
+        },
+        "Research": "Magazine and Battery Mods 2"
+      },
+      "Standard Rounds": {
+        "Name": "Standard Rounds",
+        "Slot": "MagazineAndBattery",
+        "Resources": {
+          "Tungsten": 1,
+          "Lead": 1
+        }
+      },
+      "Tactical Magazine": {
+        "Name": "Tactical Magazine",
+        "Slot": "MagazineAndBattery",
+        "Resources": {
+          "Sealant": 1,
+          "Lead": 1
+        }
+      },
+
+      "Hair Trigger": {
+        "Name": "Hair Trigger",
+        "Slot": "Internal",
+        "Resources": {
+          "Zero Wire": 1,
+          "Iridium": 2,
+          "Adhesive": 3,
+          "Platinum": 3
+        },
+        "Research": "Internal Mods 1"
+      },
+      "High Velocity": {
+        "Name": "High Velocity",
+        "Slot": "Internal",
+        "Resources": {
+          "Platinum": 3,
+          "Adhesive": 3,
+          "Monopropellant": 1,
+          "Titanium": 2
+        },
+        "Research": "Internal Mods 2"
+      },
+      "No Mod Internal": {
+        "Name": "No Mod",
+        "Slot": "Internal",
+        "Resources": {
+          "Sealant": 1,
           "Aluminum": 1
         }
       },
-      "Reflex Sights": {
-        "Name": "Reflex Sights",
-        "Slot": "Optic",
+      "Amplifier": {
+        "Name": "Amplifier",
+        "Slot": "Internal",
         "Resources": {
-          "Chlorosilanes": 1,
-          "Adhesive": 1,
-          "Aluminum": 1
-        }
+          "Zero Wire": 1,
+          "Adhesive": 3,
+          "Isocentered Magnet": 1,
+          "Tantalum": 3
+        },
+        "Research": "Internal Mods 2"
+      },
+      "Overclocked": {
+        "Name": "Overclocked",
+        "Slot": "Internal",
+        "Resources": {
+          "Zero Wire": 2,
+          "Tantalum": 3,
+          "Europium": 4,
+          "Ytterbium": 2
+        },
+        "Research": "Internal Mods 3"
+      },
+
+      "Fully Automatic": {
+        "Name": "Fully Automatic",
+        "Slot": "Receiver",
+        "Resources": {
+          "Sealant": 3,
+          "Titanium": 4,
+          "Lubricant": 4,
+          "Microsecond Regulator": 1
+        },
+        "Research": "Receiver Mods 2"
+      },
+      "Semi-Automatic": {
+        "Name": "Semi-Automatic",
+        "Slot": "Receiver",
+        "Resources": {
+          "Copper": 2,
+          "Titanium": 3,
+          "Nickel": 2,
+          "Sealant": 2
+        },
+        "Research": "Receiver Mods 1"
       }
     },
 
@@ -872,12 +1053,146 @@
       "Grendel": {
         "Name": "Grendel",
         "Type": "Rifle",
-        "Components": [ "Long Barrel", "Short Barrel", "Stabilizing Barrel", "Standard Barrel", "Tech Barrel", "Laser Sight", "None", "Recon Laser Sight" ]
+        "Components": [ "Long Barrel", "Short Barrel", "Stabilizing Barrel", "Standard Barrel", "Tech Barrel", "Laser Sight", "No Mod Laser", "Recon Laser Sight" ]
       },
       "Eon": {
         "Name": "Eon",
         "Type": "Pistol",
         "Components": [ "Glow Sights", "Reflex Sight", "Compensator", "Muzzle Brake", "No Mod Muzzle", "Suppressor Muzzle" ]
+      },
+      "Magpulse": {
+        "Name": "Magpulse",
+        "Type": "Rifle",
+        "Components": []
+      },
+      "Magshear": {
+        "Name": "Magshear",
+        "Type": "Rifle",
+        "Components": []
+      },
+      "Brigadier": {
+        "Name": "Brigadier",
+        "Type": "Heavy",
+        "Components": []
+      },
+      "Shotty": {
+        "Name": "Shotty",
+        "Type": "Shotgun",
+        "Components": []
+      },
+      "Urban Eagle": {
+        "Name": "Urban Eagle",
+        "Type": "Pistol",
+        "Components": [ "Long Barrel", "Standard Barrel", "Laser Sight", "No Mod Laser", "Recon Laser Sight" ]
+      },
+      "Maelstrom": {
+        "Name": "Maelstrom",
+        "Type": "Rifle",
+        "Components": []
+      },
+      "Magshot": {
+        "Name": "Magshot",
+        "Type": "Pistol",
+        "Components": [
+          "Long Barrel",
+          "Magnetic Rails",
+          "Standard Barrel",
+          "No Mod Laser",
+          "Recon Laser Sight",
+          "Compensator",
+          "Muzzle Brake",
+          "No Mod Muzzle",
+          "Shock Charge Band",
+          "Armor-Piercing Rounds",
+          "Depleted Uranium Rounds",
+          "Standard Rounds",
+          "Tactical Magazine",
+          "Hair Trigger",
+          "High Velocity",
+          "No Mod Internal",
+          "Fully Automatic",
+          "Semi-Automatic"
+        ]
+      },
+      "Orion": {
+        "Name": "Orion",
+        "Type": "LaserRifle",
+        "Components": []
+      },
+      "Pacifier": {
+        "Name": "Pacifier",
+        "Type": "Shotgun",
+        "Components": []
+      },
+      "Beowulf": {
+        "Name": "Beowulf",
+        "Type": "Rifle",
+        "Components": []
+      },
+      "Drum Beat": {
+        "Name": "Drum Beat",
+        "Type": "Rifle",
+        "Components": []
+      },
+      "Old Earth Shotgun": {
+        "Name": "Old Earth Shotgun",
+        "Type": "Shotgun",
+        "Components": []
+      },
+      "Kraken": {
+        "Name": "Kraken",
+        "Type": "Pistol",
+        "Components": []
+      },
+      "Equinox": {
+        "Name": "Equinox",
+        "Type": "LaserRifle",
+        "Components": []
+      },
+      "Kodama": {
+        "Name": "Kodama",
+        "Type": "Rifle",
+        "Components": []
+      },
+      "Novablast Disruptor": {
+        "Name": "Novablast Disruptor",
+        "Type": "ElectromagneticRifle",
+        "Components": [
+          "Long Barrel",
+          "Standard Barrel",
+          "Laser Sight",
+          "No Mod Laser",
+          "Recon Laser Sight",
+          "Glow Sights",
+          "Reflex Sight",
+          "Short Scope",
+          "Focal Lens",
+          "Focus Nozzle",
+          "No Mod Muzzle",
+          "Amplifier",
+          "No Mod Internal",
+          "Overclocked"
+        ]
+      },
+      "Solstice": {
+        "Name": "Solstice",
+        "Type": "LaserPistol",
+        "Components": []
+      },
+      "Coachman": {
+        "Name": "Coachman",
+        "Type": "Shotgun",
+        "Components": []
+      },
+      "Rattler": {
+        "Name": "Rattler",
+        "Type": "Pistol",
+        "Components": []
+      },
+      "Novalight": {
+        "Name": "Novalight",
+        "Type": "ParticleBeamPistol",
+        "Components": []
       }
     }
   }

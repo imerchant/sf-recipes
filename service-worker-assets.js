@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-tMq6SUs1bMH1mjv4YU9Jh0He3miGarLSXHIGxP0GKv0=",
+      "hash": "sha256-XXxhNP+YM0fUlbddGhZ3Al6AYiQ6MYIeQb+QHfPT8oo=",
       "url": "app.css"
     },
     {
-      "hash": "sha256-jGuwPrpBoJALwBBYA8vyBHF0oTH0Rf1IvLu4bp+dn7I=",
+      "hash": "sha256-3A7oKPczywQ9k9ffbtOjQAphT5AZRbZ7ZEShHSGLL1A=",
       "url": "data.json"
     },
     {
@@ -17,7 +17,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-dITFMzF\/tSRin\/4uw\/4PGFg\/JxXtVLLwlqu2i9MfWKk=",
+      "hash": "sha256-oSFp5\/hnzFPW8hE5nlqKjKpHg6RHcsMyxrwHTtiW1bo=",
       "url": "index.html"
     },
     {
@@ -53,7 +53,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-ttvJkc\/zelofZtlHs9X2kWlLR+5oYPMgdiGkzpSaXdw=",
+      "hash": "sha256-3Fj0D83fHn8kv+wSIa5oC5uDyk\/LnQ9WWUU+s7I\/qT4=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -61,7 +61,7 @@
       "url": "_framework\/dotnet.native.8.0.4.4t31mh97zb.js"
     },
     {
-      "hash": "sha256-Np9dpydLJyNIgYt68wxWNzyPs0ghv0qNJ8dw3LPk0Po=",
+      "hash": "sha256-b+Sxy5KfE07q9XOm17uRDEzH\/PAsWf0zzXhNWumI4FM=",
       "url": "_framework\/dotnet.native.wasm.br"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/MudBlazor.wasm.br"
     },
     {
-      "hash": "sha256-tMYeK1AQblvoqGT8o757ApFS5BUfdhbMJ4Fi+in1dLA=",
+      "hash": "sha256-zBFSAZwfj4r9W4HILw8e86ShbXIAhGnRJi0VuMDIH2Q=",
       "url": "_framework\/StarfieldRecipes.wasm.br"
     },
     {
@@ -213,7 +213,7 @@
       "url": "_framework\/System.ObjectModel.wasm.br"
     },
     {
-      "hash": "sha256-Rs3oYcubnlUgV4ZGy2M0j0o03SZav7DAIp0So9r\/9rw=",
+      "hash": "sha256-bwMocwxMNKg3pdzAwM5qyx3j3Yf90x9Z7i9gVXHAkFI=",
       "url": "_framework\/System.Private.CoreLib.wasm.br"
     },
     {
@@ -225,7 +225,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm.br"
     },
     {
-      "hash": "sha256-4kyVHlXdINblqzIbfN28eJK8FJyFEUl\/aCjlYB9ixqo=",
+      "hash": "sha256-i6dLJwIDnZVaX7r24rgeZ8iuMEkL4DJK20+8qaXHZPg=",
       "url": "_framework\/System.Runtime.wasm.br"
     },
     {
@@ -265,5 +265,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "lThHjKPK"
+  "version": "\/pIY+zxI"
 };
