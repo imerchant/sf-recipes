@@ -53,7 +53,7 @@
       "url": "_framework\/icudt_no_CJK.dat.br"
     },
     {
-      "hash": "sha256-3Fj0D83fHn8kv+wSIa5oC5uDyk\/LnQ9WWUU+s7I\/qT4=",
+      "hash": "sha256-aLihhb4to0dn4PV53SRIisHH47lbtPnAF3Xfk6V8q4M=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/MudBlazor.wasm.br"
     },
     {
-      "hash": "sha256-zBFSAZwfj4r9W4HILw8e86ShbXIAhGnRJi0VuMDIH2Q=",
+      "hash": "sha256-lpVJBcjF0M9rSCGtELgOZtNWvODAYbpfEMIJPdTecJg=",
       "url": "_framework\/StarfieldRecipes.wasm.br"
     },
     {
@@ -265,5 +265,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "\/pIY+zxI"
+  "version": "k5gBIwO4"
 };

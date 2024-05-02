@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "StarfieldRecipes",
   "resources": {
-    "hash": "sha256-CWOHn9dfBSGT+BFGn+Vk2YJKPQt7A353so66nSx8U8c=",
+    "hash": "sha256-i3+vL6mvBDzFGCUDuCjZu2Ub43xo/8TeKsztPXGg+5I=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.4t31mh97zb.js": "sha256-BsaBOB7rs58dTJYIDzgRAFJi68fZSgclGo8zLpuoRns="
     },
@@ -36,7 +36,7 @@
       "Microsoft.JSInterop.wasm": "sha256-Xkhv1EF+6zx23vxKMa6BjYff9Br9V3B0/x8Svxc7f7M=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-i8yLC1pzEZMAPAHK2MyunJW81S6Tpyvwka9LDZSylx8=",
       "MudBlazor.wasm": "sha256-dhUZCruWcrWSjrXRRtDOPj1nfChmKU/7akdlFByeHig=",
-      "StarfieldRecipes.wasm": "sha256-n6A/y/mmX46faZGiv5xLvrW6e1GkPjTaWRQ0+kBguZ0=",
+      "StarfieldRecipes.wasm": "sha256-lN4z6dsrl3qjLMsZUlF91DX8WeEeFRw6apo5GFdjaVc=",
       "System.Collections.Concurrent.wasm": "sha256-NTD/6yw6YFlVQGZN1VkSyt6B3FNeOorE4waaDmvmGUY=",
       "System.Collections.Immutable.wasm": "sha256-5kHA+QUJjdwG/DR2Q9TZhAIjEAVs6BDsImJcd9XZe/g=",
       "System.Collections.NonGeneric.wasm": "sha256-+hLX+8kAQuN77wgopkJLddCoRGUbNMuoux84tkO2yNU=",
